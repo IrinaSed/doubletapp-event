@@ -1,0 +1,20 @@
+{{#extend "layout"}}
+    {{#content "head" mode="append"}}
+        <link rel='stylesheet' href="../../blocks/button/index.css"/>
+    {{/content}}
+    {{#content "body"}}
+        <form method="post" class="create">
+            <label class="input-name" for="nameEvent">Название рекламной компании</label>
+            <input name="name" class="create-input" id="nameEvent" type="text" required>
+            <label class="input-name" for="event">Событие</label>
+            <select class=create-input" id="event" name="event">
+                {{#each events}}
+                    <option value="{{_id}}">
+                        {{name}}
+                    </option>
+                {{/each}}
+            </select>
+            {{> button/index _text='create'}}
+        </form>
+    {{/content}}
+{{/extend}}

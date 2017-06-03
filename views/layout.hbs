@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{#block "head"}}
+    <title>{{title}}</title>
+    <link rel='stylesheet' href="index.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{{/block}}
+</head>
+  <body>
+  {{#block "body"}}
+  {{/block}}
+  </body>
+{{#block "script"}}
+    {{{body}}}
+{{/block}}
+</html>

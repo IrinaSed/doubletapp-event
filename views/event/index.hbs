@@ -1,0 +1,39 @@
+{{#extend "layout"}}
+    {{#content "head"}}
+        <title>Event</title>
+        <link rel='stylesheet' href="../advertise/index.css"/>
+        <link rel='stylesheet' href="../blocks/button/index.css"/>
+    {{/content}}
+    {{#content "body"}}
+        <header>
+            <div class="logo">
+                <img src="{{logoSrc}}" alt="logo">
+            </div>
+            <div class="headerText">
+                <p class="nameEvent">{{name}}</p>
+                <p class="organizers">{{organizer}}</p>
+            </div>
+            <div class="iconEvent">
+                <img src="{{iconSrc}}" alt="icon">
+            </div>
+        </header>
+        <div class="description">{{description}}</div>
+        <div class="activityDetails">
+            <p>Activity details:</p>
+            <div class="details">
+                <div class="what">{{what}}</div>
+                <div class="when">{{when}}</div>
+                <div class="where">{{where}}</div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe width="350"
+                    height="350"
+                    src="https://www.google.com/maps/embed/v1/place?zoom=9&q={{location.lat}},{{location.lon}}&key=AIzaSyDnvjhIykhrcAujV8LBy_mJXpXDVOZ4-94"></iframe>
+        </div>
+        <div class="buttons">
+            {{> button/index _text='call' _class='call'}}
+            {{> button/index _text='website' _class='website'}}
+        </div>
+    {{/content}}
+{{/extend}}

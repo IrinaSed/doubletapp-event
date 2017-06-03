@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url('../fonts/Roboto-Light.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-stretch: ultra-condensed;
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerText {
+    width: 70vw;
+    align-self: center;
+}
+
+.iconEvent {
+    padding-left: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    padding-right: 20px;
+    width: 100px;
+}
+
+.organizers {
+    font-weight: bold;
+}
+
+.activityDetails > p {
+    font-weight: 600;
+}
+
+.what,
+.when,
+.where {
+    margin: 5px 0;
+}
+
+.what:before,
+.when:before,
+.where:before {
+    display: inline-block;
+    width: 60px;
+    margin-left: -60px;
+    font-weight: 600;
+}
+
+.what:before {
+    content: "What: ";
+}
+.when:before {
+    content: "When: ";
+}
+.where:before {
+    content: "Where: ";
+}
+
+.activityDetails {
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+
+.details {
+    padding-left: 80px;
+}
+
+.map {
+    text-align: center;
+    margin: auto;
+}
+
+.map iframe {
+    max-width: 90vw;
+}
+
+.buttons {
+    width: 308px;
+    margin: auto;
+}
+
+.description {
+    padding-bottom: 10px;
+}

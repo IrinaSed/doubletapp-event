@@ -1,0 +1,40 @@
+.google-map {
+    height: 300px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.icon-select {
+    width: 250px !important;
+    height: 70px;
+    margin: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.input-name {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.create-input {
+    margin: 0 0 20px 0;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+}
+
+.create {
+    text-align: center;
+    margin: 0 auto;
+}
+.description {
+    resize: none;
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+}

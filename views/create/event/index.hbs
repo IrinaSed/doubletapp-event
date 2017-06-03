@@ -1,0 +1,34 @@
+{{#extend "layout"}}
+    {{#content "head" mode="append"}}
+        <link rel="stylesheet" type="text/css" href="iconselect.css" >
+        <link rel='stylesheet' href="../../blocks/button/index.css"/>
+    {{/content}}
+    {{#content "body"}}
+        <form method="post" class="create" enctype="multipart/form-data">
+            <label class="input-name" for="nameEvent">Название события</label>
+            <input name="name" class="create-input" id="nameEvent" type="text" required>
+            <label class="input-name" for="organizer">Организатор события</label>
+            <input name="organizer" class="create-input" id="organizer" type="text" required>
+            <label class="input-name" for="logo">Логотип события</label>
+            <input name="logo" accept="image/jpg, image/png" class="create-input" id="logo" type="file" required>
+            <div class="icon-select" id="my-icon-select"></div>
+            <label class="input-name" for="description">Описание события</label>
+            <textarea name="description" class="description create-input" id="description" maxlength="128" required></textarea>
+            <label class="input-name" for="what">Что:</label>
+            <input name="what" class="create-input" id="what" type="text" required>
+            <label class="input-name" for="when">Когда:</label>
+            <input name="when" class="create-input" id="when" type="date" required>
+            <input name="selected-icon" hidden>
+            <input type="hidden" class="location" id="coords" name="coords" required>
+            <div class="google-map" id="map"></div>
+            {{> button/index _text='create'}}
+        </form>
+    {{/content}}
+    {{#content "script"}}
+        <script type="text/javascript" src="iconselect.js"></script>
+        <script type="text/javascript" src="iscroll.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABg-e-Fup-0e-mYsIR38HCjEc6oQdLZRE&callback=initMap"
+                async defer></script>
+    {{/content}}
+{{/extend}}

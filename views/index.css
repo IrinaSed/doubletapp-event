@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.orange-button {
+  font-size: 10px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content > div {
+  display: inline-block;
+  vertical-align:top;
+   min-width: 200px;
+    margin: 5px;
+}
+
+.advertise-div,
+.event-div {
+  text-align: center;
+  display: flex;
+  justify-self: center;
+  max-width: 250px;
+  margin: 10px 0 0 10px;
+  padding: 5px;
+  color: black;
+  background: #a1b8dc;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.advertise-div a,
+.event-div a {
+  position: relative;
+  top: 15%;
+  text-decoration: none;
+  color: black;
+}
+.advertise-div a:hover,
+.event-div a:hover {
+    color: #663399;
+}
+.icon-div,
+.logo-div {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+.advertise-link,
+.event-link {
+    width: 200px;
+}
